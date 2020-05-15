@@ -33,7 +33,6 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'better_errors', '~> 2.7', '>= 2.7.1'
 
 gem 'bulma-rails', '~> 0.8.0'
 
@@ -59,7 +58,9 @@ group :development do
 
   gem 'guard', '~> 2.16', '>= 2.16.2'
 
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+
+  gem 'better_errors', '~> 2.7', '>= 2.7.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
